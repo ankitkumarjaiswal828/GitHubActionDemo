@@ -2,6 +2,7 @@ name: First Workflows
 
 on:
   push:
+  workflow_dispatch:
 
 jobs:
   first-job:
