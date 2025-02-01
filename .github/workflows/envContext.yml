@@ -1,0 +1,17 @@
+name: envContext
+on:
+ push:
+
+env:
+ var1: 'workflow'
+
+jobs:
+ env-context:
+  runs-on: ubuntu-latest
+  env: 
+   var1: 'job'
+  steps:
+   - name: Env
+     env: 
+      var1: 'steps'
+      run: echo "${{env.var1}}"
