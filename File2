@@ -1,0 +1,5 @@
+Actionlint is a linter designed for GitHub Actions. GitHub Actions is a CI/CD platform that enables automation of software workflows. Actionlint plays a needed role in this ecosystem by checking the syntax and logic of GitHub Action workflows.
+
+GitHub Actions offers three types of custom actions: JavaScript actions, which run directly on the runner machine; Docker container actions, which run in a Docker environment; and composite actions, which combine multiple workflow steps into a single action.
+
+https://rhysd.github.io/actionlint/
