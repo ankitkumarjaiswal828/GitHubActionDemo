@@ -12,6 +12,4 @@ jobs:
    var1: 'job'
   steps:
    - name: Env
-     env: 
-      var1: 'steps'
      run: echo "${{env.var1}}"
