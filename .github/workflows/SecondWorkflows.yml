@@ -9,11 +9,12 @@ jobs:
   first-job:
     runs-on: ubuntu-latest
     steps:
-     - name: First Step
-       run: echo "Hello GitHub Action with Ankit"
+     - name: Setup Java JDK
+       uses: actions/setup-java@v4.7.0
+       with:
+          distribution: 'temurin'
+          java-version: '21'
+            
+      
        
-  second-job:
-    runs-on: windows-latest
-    steps:
-     - name: Second Step
-       run: echo "workflows create in another branch and show workflows trigger not available another branch"
+ 
