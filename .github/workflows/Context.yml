@@ -1,0 +1,19 @@
+name: Context
+on:
+ push:
+ workflow_dispatch:
+jobs:
+ context:
+  runs-on: ubuntu-latest
+  steps:
+   - name: Display info about git Actions
+     run: |
+      echo "Event name ${{github.event_name}}"
+      echo "Ref ${{github.ref}}"
+      echo "SHA ${{github.sha}}"
+      echo "Actor ${{github.actor}}"
+      echo "Workflow ${{github.workflow}}"
+      echo "Run Id ${{github.run_id}}"
+      echo "Runner number ${{github.run_number}}"
+      
+ 
