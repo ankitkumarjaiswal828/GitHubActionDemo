@@ -8,8 +8,6 @@ env:
 jobs:
  env-context:
   runs-on: ubuntu-latest
-  env: 
-   var1: 'job'
   steps:
    - name: Env
      run: echo "${{env.var1}}"
