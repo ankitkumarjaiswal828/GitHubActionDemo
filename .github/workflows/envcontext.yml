@@ -1,4 +1,4 @@
-name: envContext
+name: envcontext
 on:
  push:
 
@@ -14,4 +14,4 @@ jobs:
    - name: Env
      env: 
       var1: 'steps'
-      run: echo "${{env.var1}}"
+     run: echo "${{env.var1}}"
