@@ -1,0 +1,19 @@
+name: Third Workflows
+
+on:
+  issues:
+  push:
+  workflow_dispatch:
+
+jobs:
+  first-job:
+    runs-on: ubuntu-latest
+    steps:
+     - name: First Step
+       run: echo "Hello GitHub Action with Ankit"
+       
+  second-job:
+    runs-on: windows-latest
+    steps:
+     - name: Second Step
+       run: echo "workflows create in another branch and show workflows trigger not available another branch"
