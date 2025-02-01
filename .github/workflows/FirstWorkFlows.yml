@@ -9,11 +9,14 @@ jobs:
     steps:
      - name: First Step
        run: echo "Hello GitHub Action with Ankit"
-   second-job:
+       
+  second-job:
     runs-on: windows-latest
     steps:
      - name: Second Step
        run: echo "Hello GitHub Action with Ankit in Second Step"
+  
+
 
        
     
