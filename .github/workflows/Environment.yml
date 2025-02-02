@@ -1,7 +1,6 @@
 name: Environment
 
 on:
- push:
  workflow_dispatch:
   inputs:
    TARGET_ENVIRONMENT:
@@ -11,11 +10,11 @@ on:
 jobs:
    echo-environment:
     runs-on: ubuntu-latest 
-    environment: $${{inputs.TARGET_ENVIRONMENT}}
+    environment: ${{inputs.TARGET_ENVIRONMENT}}
     steps:
-     - name: Echo vars
+     - name: Echo Vars
        run: |
         echo "Secret variable ${{secrets.TEST_SECRET1}}"
-        echo " Var is ${{vars.VAR1}}"
+        echo "Var is ${{vars.VAR1}}"
         
         
