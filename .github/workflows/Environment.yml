@@ -5,10 +5,10 @@ on:
  workflow_dispatch:
   inputs:
    TARGET_ENVIRONMENT:
-   type: environment
-   default: staging
+    type: environment
+    default: staging
       
-  jobs:
+jobs:
    echo-environment:
     runs-on: ubuntu-latest 
     environment: $${{inputs.TARGET_ENVIRONMENT}}
