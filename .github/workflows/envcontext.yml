@@ -3,7 +3,7 @@ on:
  push:
 
 env:
- var1: 'workflow'
+ var1: 'env variable is local variables and vars is global variables'
 
 jobs:
  env-context:
