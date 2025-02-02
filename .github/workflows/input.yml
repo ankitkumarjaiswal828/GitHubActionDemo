@@ -1,0 +1,14 @@
+name: input
+on:
+ push:
+ workflow_dispatch:
+  inputs:
+   debug:
+    type: boolen
+    default: false
+jobs:
+ inputs:
+  runs-on: ubuntu-latest
+  steps:
+   - name: Inputs
+     run: echo "Enter the input value in form of boolean"
