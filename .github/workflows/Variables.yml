@@ -1,0 +1,16 @@
+name: Variable Concepts
+
+on:
+ workflow_dispatch:
+
+jobs:
+ variables:
+   runs-on: ubuntu-latest
+   steps:
+    - name: Variables
+      run: echo "value for variables stored ${{vars.MY_VARS}}"
+ 
+   
+  
+   
+  
