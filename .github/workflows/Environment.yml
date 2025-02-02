@@ -3,18 +3,19 @@ name: Environment
 on:
  push:
  workflow_dispatch:
-    inputs:
-      TARGET_ENVIRONMENT:
-      type: environment
-      default: staging
-jobs:
-    echo-environment:
-     runs-on: ubuntu-latest 
-     environment: $${{inputs.TARGET_ENVIRONMENT}}
-     steps:
-      - name: Echo vars
-        run: |
-         echo "Secret variable ${{secrets.TEST_SECRET1}}"
-         echo " Var is ${{vars.VAR1}}"
+  inputs:
+   TARGET_ENVIRONMENT:
+   type: environment
+   default: staging
+      
+  jobs:
+   echo-environment:
+    runs-on: ubuntu-latest 
+    environment: $${{inputs.TARGET_ENVIRONMENT}}
+    steps:
+     - name: Echo vars
+       run: |
+        echo "Secret variable ${{secrets.TEST_SECRET1}}"
+        echo " Var is ${{vars.VAR1}}"
         
         
