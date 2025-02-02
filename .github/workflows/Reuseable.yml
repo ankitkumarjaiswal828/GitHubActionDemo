@@ -1,0 +1,9 @@
+name: Main Workflow
+on:
+ push:
+
+jobs:
+ use-resuable-workflow:
+  uses: ./.github/workflows/Template.yml
+  with:
+   message: "Hello calling from main workflow"
